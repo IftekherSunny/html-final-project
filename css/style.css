@@ -208,7 +208,11 @@ header nav ul li ul li a:hover {
     display: block;
     overflow: hidden;
 }
-.side-menu h2 {
+
+.single-side-menu {
+    padding-bottom: 20px;
+}
+.single-side-menu h2 {
     text-transform: capitalize;
     background-color: #162F65;
     color: #fcfcfc;
@@ -216,7 +220,7 @@ header nav ul li ul li a:hover {
     font-size: 18px;
     padding: 7px;
 }
-.side-menu ul {
+.single-side-menu ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
