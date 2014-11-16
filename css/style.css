@@ -1,0 +1,282 @@
+/*
+* Theme Name: Iftekher Islam Sunny
+* Theme Verson: 1.0
+* Author Name: Iftekher Islam Sunny
+* Author URL: http://iftekhersunny.com
+* Theme Download Link: http://github.com
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    background: url('../img/grey_wash_wall.png') repeat;
+    color: #333;
+}
+
+.main-content {
+    width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    display: block;
+    overflow: hidden;
+    /* Main content dark shadow */
+    -webkit-box-shadow: 0px 0px 12px 15px rgba(51, 51, 51, 0.78);
+    -moz-box-shadow:    0px 0px 12px 15px rgba(51, 51, 51, 0.78);
+    box-shadow:         0px 0px 12px 15px rgba(51, 51, 51, 0.78);
+}
+header {
+    background-color: transparent;
+    width: 960px;
+    display: block;
+}
+header .brand{
+    background-color: #43609C;
+    color: #ffffff;
+    padding: 12px;
+    height: 100px;
+    position: relative;
+}
+header .brand h2{
+    font-size: 30px;
+    padding: 13px;
+    margin-left: 90px;
+    margin-top: 8px;
+    position: absolute;
+    text-transform: capitalize;
+    animation: fontbulger 2s 0s;
+}
+header .brand img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 1px;
+}
+header .brand p {
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 50px;
+    /* animate style with keyframe */
+    animation: fontbulger 2s 0s;
+}
+header nav{
+    display: block;
+    background-color: #C3C3C3;
+    text-transform: capitalize;
+    min-height: 50px;
+}
+header nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: block;
+    background-color: #C3C3C3;
+}
+header nav ul li{
+    float: left;
+    border-right: 1px solid #929292;
+    border-left: 1px solid #E1E1E1;
+    position: relative;
+}
+header nav ul li:last-child{
+    border-right: 0px solid;
+}
+
+header nav ul li:first-child{
+    border-left: 0px solid;
+}
+header nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #162F65;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background-color: #E1E1E1;
+    /* Menu fade */
+    transition: background-color 1s ease;
+}
+
+/* Drop Down Menu */
+header nav ul li ul {
+    position:absolute;
+    left:-999999px;
+    width: 150px;
+    /* Menu fadeout */
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+header nav ul li:hover ul {
+    left:0px;
+    /* Menu fadeout */
+    visibility:visible;
+    opacity: 0.90;
+    transition-delay:0s;
+    position: absolute;
+}
+header nav ul li ul li {
+    float: none;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 1px solid #C3C3C3;
+}
+header nav ul li ul li a {
+    background-color: #fcfcfc;
+    color: #162f65;
+    padding: 5px 15px 5px 15px;
+}
+header nav ul li ul li a:hover {
+    opacity: 1;
+    background-color: #E1E1E1; transition: background-color 0.5s ease;
+}
+.slider {
+    display: block;
+    height: 300px;
+}
+.slider img {
+    width: 960px;
+    height: 300px;
+    border-bottom: 1px solid #ededed;
+}
+.content {
+    padding: 50px 30px 30px 30px;
+    display: block;
+    overflow: hidden;
+}
+.single-content {
+    width: 610px;
+    float: left;
+    /*border-bottom: 1px solid #C3C3C3;*/
+    padding-bottom: 25px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: #F6F6F6;
+    padding: 20px;
+}
+.single-content h2 {
+    color: #162F65;
+    font-size: 25px;
+    text-transform:capitalize;
+}
+.single-content p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.single-content-btn {
+    margin-top: 20px;
+    float: right;
+}
+.btn-read-more {
+    background-color: #435375;
+    color: #FFF;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-read-more:hover {
+    background-color: #162F65;
+    color: #FFF;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-active {
+    background-color: #162F65;
+    color: #FFF;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-active {
+    background-color: #E1E1E1;
+}
+
+.side-menu {
+    width: 200px;
+    margin-left: 50px;
+    float: right;
+    display: block;
+    overflow: hidden;
+}
+.side-menu h2 {
+    text-transform: capitalize;
+    background-color: #162F65;
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+}
+.side-menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: #7692CE;
+}
+.side-menu ul li {
+    float: none;
+    border-bottom: 1px solid #162F65;
+}
+.side-menu ul li a {
+    padding: 8px;
+    padding-left: 20px;
+    text-decoration: none;
+    display: block;
+    color: #FEFEFE;
+}
+.side-menu ul li a:hover {
+    color: #162F65;
+}
+
+.pagination {
+    width: 650px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+    padding: 70px 5px 5px 5px;
+}
+footer {
+    display: block;
+    overflow: hidden;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 100px;
+}
+footer p {
+    font-size: 12px;
+    color: #fcfcfc;
+    text-align: center;
+}
+
+footer p a {
+    color: #E9EAED;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+/* fontbulger keyframe */
+ @keyframes fontbulger {
+        from {
+            /*transform: rotate(0deg);*/
+            top: -20px;
+        }
+        to {
+            /*transform: rotate(360deg);*/
+            top: 13px;
+        }
+ }
